@@ -4,7 +4,10 @@
     <meta charset="UTF-8"/>
     <title>Hello Thymeleaf!</title>
 </head>
-<body>
-    <p th:text="'Hello, ' + ${name} + '!!!!!!'" />
-</body>
+	<body>
+	    <p th:text="'Hello, ' + ${name} + '!!!'" />
+	     <p th:each="abc : ${list}"
+      		 th:text="${abc}">A Smoke Test</p>
+	    
+	</body>
 </html>
